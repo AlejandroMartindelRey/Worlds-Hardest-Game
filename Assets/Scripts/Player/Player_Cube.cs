@@ -2,7 +2,6 @@ using System;
 using System.Linq;
 using NUnit.Framework;
 using TMPro;
-using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -10,10 +9,10 @@ using UnityEngine.SceneManagement;
 public class Player_Cube : MonoBehaviour
 {
     [SerializeField] public Animator animator;
-    [SerializeField] private AnimationClip Left;
-    [SerializeField] private AnimationClip Right;
-    [SerializeField] private AnimationClip Up;
-    [SerializeField] private AnimationClip Down;
+    [SerializeField] private AnimationClip left;
+    [SerializeField] private AnimationClip right;
+    [SerializeField] private AnimationClip up;
+    [SerializeField] private AnimationClip down;
     [SerializeField] private TimeSlowdown timeSlowScript;
     [SerializeField] private  TMP_Text scoreboard;
     [SerializeField] private float speed;
@@ -21,7 +20,7 @@ public class Player_Cube : MonoBehaviour
     private GameObject[] coinManager;
     private GameObject[] coinActivate;
     private int coins = 0;
-    private new Vector3 intitialPosition;
+    private Vector3 intitialPosition;
     private float hInput;
     private float vInput;
 
@@ -119,29 +118,5 @@ public class Player_Cube : MonoBehaviour
         scoreboard.text = "Score: " + coins;
         timeSlowScript.timeRemaining += 10;
         other.gameObject.SetActive(false);
-    }
-    
-    void PlayerMovement()
-    {
-        // Move Up
-        if (Input.GetKey(KeyCode.W))
-        {
-            this.gameObject.transform.position += new Vector3(0, 1, 0) *5 *Time.deltaTime;
-        }
-        // Move Down
-        if (Input.GetKey(KeyCode.S))
-        {
-            this.gameObject.transform.position += new Vector3(0,-1, 0) *5 *Time.deltaTime;
-        }
-        // Move Left
-        if (Input.GetKey(KeyCode.A))
-        {
-            this.gameObject.transform.position += new Vector3(-1, 0,0) *5 *Time.deltaTime;
-        }
-        // Move Right
-        if (Input.GetKey(KeyCode.D))
-        {
-            this.gameObject.transform.position += new Vector3(1, 0, 0) *5 *Time.deltaTime;
-        }
     }
 }

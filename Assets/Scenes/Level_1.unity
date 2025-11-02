@@ -853,10 +853,6 @@ PrefabInstance:
       propertyPath: scoreboard
       value: 
       objectReference: {fileID: 1887756152}
-    - target: {fileID: 5338407425996521557, guid: 0c0506318c2f76c419f3a7a3c540d8b7, type: 3}
-      propertyPath: neededScore
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 5949303851369090363, guid: 0c0506318c2f76c419f3a7a3c540d8b7, type: 3}
       propertyPath: m_Name
       value: Player
@@ -865,14 +861,6 @@ PrefabInstance:
       propertyPath: timeLeft
       value: 
       objectReference: {fileID: 1280664249}
-    - target: {fileID: 7264455861524908883, guid: 0c0506318c2f76c419f3a7a3c540d8b7, type: 3}
-      propertyPath: playerAnimator
-      value: 
-      objectReference: {fileID: 780758996}
-    - target: {fileID: 7380310354590136104, guid: 0c0506318c2f76c419f3a7a3c540d8b7, type: 3}
-      propertyPath: m_Size.y
-      value: 0.14
-      objectReference: {fileID: 0}
     - target: {fileID: 8289677701563152390, guid: 0c0506318c2f76c419f3a7a3c540d8b7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.67
@@ -1250,11 +1238,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 927f2f2899aa37c45b94c6fd4e360464, type: 3}
---- !u!95 &780758996 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 8706930374662458796, guid: 0c0506318c2f76c419f3a7a3c540d8b7, type: 3}
-  m_PrefabInstance: {fileID: 569947115}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &822010723
 PrefabInstance:
   m_ObjectHideFlags: 0
