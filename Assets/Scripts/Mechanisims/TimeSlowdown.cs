@@ -3,7 +3,6 @@ using UnityEngine;
 using TMPro;
 public class TimeSlowdown : MonoBehaviour
 {
-    [SerializeField] private Animator playerAnimator;
     [SerializeField] private TMP_Text timeLeft;
     [SerializeField] public int timeRemaining = 10;
     public int stableTimeRemaining;
