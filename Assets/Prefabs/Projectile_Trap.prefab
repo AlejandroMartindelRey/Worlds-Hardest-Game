@@ -274,4 +274,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Projectile_Trap
   projectile: {fileID: 5246513918036598485, guid: a52bc23fc1d2a3a449f798a069f27745, type: 3}
-  spawnTime: 1
+  spawnTime: 1.5

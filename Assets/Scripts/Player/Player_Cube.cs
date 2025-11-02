@@ -14,7 +14,6 @@ public class Player_Cube : MonoBehaviour
     [SerializeField] private AnimationClip Right;
     [SerializeField] private AnimationClip Up;
     [SerializeField] private AnimationClip Down;
-    [SerializeField] private int test;
     [SerializeField] private TimeSlowdown timeSlowScript;
     [SerializeField] private  TMP_Text scoreboard;
     [SerializeField] private float speed;
