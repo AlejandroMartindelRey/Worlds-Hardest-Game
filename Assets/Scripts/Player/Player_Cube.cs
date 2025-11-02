@@ -2,27 +2,24 @@ using System;
 using System.Linq;
 using NUnit.Framework;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
 public class Player_Cube : MonoBehaviour
 {
     [SerializeField] public Animator animator;
-    [SerializeField] private AnimationClip left;
-    [SerializeField] private AnimationClip right;
-    [SerializeField] private AnimationClip up;
-    [SerializeField] private AnimationClip down;
     [SerializeField] private TimeSlowdown timeSlowScript;
     [SerializeField] private  TMP_Text scoreboard;
     [SerializeField] private float speed;
     [SerializeField] private int neededScore;
+    [SerializeField] private int sceneLoad;
     private GameObject[] coinManager;
     private GameObject[] coinActivate;
     private int coins = 0;
     private Vector3 intitialPosition;
     private float hInput;
     private float vInput;
+    
 
     void Start()
     {
@@ -89,7 +86,7 @@ public class Player_Cube : MonoBehaviour
             coins = 0;
             scoreboard.text = "Score: " + coins;
             this.gameObject.transform.position = intitialPosition;
-            timeSlowScript.timeRemaining = 10;
+            timeSlowScript.timeRemaining = timeSlowScript. stableTimeRemaining;
             timeSlowScript.isTimeSlow = false;
             Time.timeScale = 1;
             ActivateCoins(other);
@@ -97,8 +94,12 @@ public class Player_Cube : MonoBehaviour
         else if (other.gameObject.CompareTag("Ending") && coins == neededScore)
         {
             Destroy(gameObject);
-            SceneManager.LoadScene(0);
+            timeSlowScript.isTimeSlow =  false;
+            Time.timeScale = 1;
+            SceneManager.LoadScene(sceneLoad);
+            
         }
+        
 
     }
     
@@ -116,7 +117,7 @@ public class Player_Cube : MonoBehaviour
     {
         coins++; //+1 coin.
         scoreboard.text = "Score: " + coins;
-        timeSlowScript.timeRemaining += 10;
+        timeSlowScript.timeRemaining += 5;
         other.gameObject.SetActive(false);
     }
 }

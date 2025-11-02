@@ -6,14 +6,20 @@ public class TimeSlowdown : MonoBehaviour
     [SerializeField] private Animator playerAnimator;
     [SerializeField] private TMP_Text timeLeft;
     [SerializeField] public int timeRemaining = 10;
+    public int stableTimeRemaining;
     private float timer;
     public bool isTimeSlow = false;
     private float slowdownFactor = 0.2f;
     private float slowdownLength = 0f;
-    
+
+    void Start()
+    {
+        stableTimeRemaining = timeRemaining;
+    }
     void DoSlowmotion()
     {
         Time.timeScale = slowdownFactor;
+           
     }
 
     private void Update()
