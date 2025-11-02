@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7734690801008906159}
   - component: {fileID: 8983935668895083423}
   - component: {fileID: 7010574568266254891}
+  - component: {fileID: 9036234088907394390}
   m_Layer: 0
   m_Name: Projectile
   m_TagString: Trap
@@ -82,9 +83,9 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0, g: 0, b: 0.9921569, a: 1}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: -6955790032328933191, guid: 56a95088af0e55149ac6be76281eabd2, type: 3}
+  m_Color: {r: 0.70440245, g: 0.70440245, b: 0.70440245, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -106,9 +107,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01ca39a281cc79445a4d30621bade37e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Projectile
-  speed: 5
+  speed: -5
   destroyTime: 2
-  direction: {x: 1, y: 0, z: 0}
 --- !u!58 &7734690801008906159
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -208,3 +208,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &9036234088907394390
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5246513918036598485}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6fef4db87bef2b74fb1367befcbb8669, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

@@ -2,12 +2,18 @@ using System;
 using System.Linq;
 using NUnit.Framework;
 using TMPro;
+using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Player_Cube : MonoBehaviour
 {
+    [SerializeField] public Animator animator;
+    [SerializeField] private AnimationClip Left;
+    [SerializeField] private AnimationClip Right;
+    [SerializeField] private AnimationClip Up;
+    [SerializeField] private AnimationClip Down;
     [SerializeField] private int test;
     [SerializeField] private TimeSlowdown timeSlowScript;
     [SerializeField] private  TMP_Text scoreboard;
@@ -17,6 +23,8 @@ public class Player_Cube : MonoBehaviour
     private GameObject[] coinActivate;
     private int coins = 0;
     private new Vector3 intitialPosition;
+    private float hInput;
+    private float vInput;
 
     void Start()
     {
@@ -34,13 +42,38 @@ public class Player_Cube : MonoBehaviour
 
     private void Movement()
     {
-        float hInput = Input.GetAxisRaw("Horizontal"); 
-        float vInput = Input.GetAxisRaw("Vertical");
+        hInput = Input.GetAxisRaw("Horizontal"); 
+        vInput = Input.GetAxisRaw("Vertical");
         
         Vector3 movementDirection = new Vector3(hInput, vInput, 0).normalized;
         
         //gameObject.transform.position += movementDirection * speed*  Time.deltaTime;
         transform.Translate(movementDirection * speed * Time.unscaledDeltaTime, Space.World);
+        Animations();
+    }
+
+    private void Animations()
+    {
+        if (vInput >= 0.1)
+        {
+            animator.Play("Player_Up");
+        }
+        else if (vInput <= -0.1)
+        {
+            animator.Play("Player_Down");
+        }
+        else if (hInput >= 0.1)
+        {
+            animator.Play("Player_Right");
+        }
+        else if (hInput <= -0.1)
+        {
+            animator.Play("Player_Left");
+        }
+        else
+        {
+            animator.Play("Player_Idle");
+        }
     }
 
     // YOU NEED both of the objects have a collider

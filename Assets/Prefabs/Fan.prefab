@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3695474248374704312}
   - component: {fileID: 56925967629424357}
-  - component: {fileID: 6593819841469499493}
+  - component: {fileID: 8165039056866002549}
   m_Layer: 0
   m_Name: Circle (3)
   m_TagString: Trap
@@ -28,10 +28,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.86602545, w: 0.49999997}
   m_LocalPosition: {x: -2.5980759, y: -1.5000005, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 7, y: 7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1551322426973014862}
+  m_Father: {fileID: 6079654486164167610}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!212 &56925967629424357
 SpriteRenderer:
@@ -79,9 +79,9 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0, g: 0, b: 0.9960785, a: 1}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 447856426745747066, guid: 97d2595203f45e840a3ad81e8477589f, type: 3}
+  m_Color: {r: 0.654088, g: 0.654088, b: 0.654088, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -91,7 +91,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &6593819841469499493
+--- !u!58 &8165039056866002549
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,12 +121,12 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Radius: 0.105
 --- !u!1 &104161482865925426
 GameObject:
   m_ObjectHideFlags: 0
@@ -137,7 +137,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3711024430158278663}
   - component: {fileID: 2409673039261356045}
-  - component: {fileID: 583262357862650442}
+  - component: {fileID: 1908572125053693431}
   m_Layer: 0
   m_Name: Circle (2)
   m_TagString: Trap
@@ -155,10 +155,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.86602545, w: 0.49999994}
   m_LocalPosition: {x: 1.2990379, y: -0.75000024, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 7, y: 7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1551322426973014862}
+  m_Father: {fileID: 6079654486164167610}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!212 &2409673039261356045
 SpriteRenderer:
@@ -206,9 +206,9 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0, g: 0, b: 0.9960785, a: 1}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 447856426745747066, guid: 97d2595203f45e840a3ad81e8477589f, type: 3}
+  m_Color: {r: 0.654088, g: 0.654088, b: 0.654088, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -218,7 +218,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &583262357862650442
+--- !u!58 &1908572125053693431
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -248,12 +248,12 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Radius: 0.105
 --- !u!1 &942348872425774692
 GameObject:
   m_ObjectHideFlags: 0
@@ -264,7 +264,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1551322426973014862}
   - component: {fileID: 4465708737927595274}
-  - component: {fileID: 8481641957082357718}
+  - component: {fileID: 4167963597905294769}
   m_Layer: 0
   m_Name: Pivot
   m_TagString: Trap
@@ -282,15 +282,9 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 7, y: 7, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2055246063020232886}
-  - {fileID: 1390262418338293893}
-  - {fileID: 3711024430158278663}
-  - {fileID: 8374759972429239261}
-  - {fileID: 5656415175281242452}
-  - {fileID: 3695474248374704312}
+  m_Children: []
   m_Father: {fileID: 6079654486164167610}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4465708737927595274
@@ -339,9 +333,9 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0, g: 0, b: 0.9960785, a: 1}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 447856426745747066, guid: 97d2595203f45e840a3ad81e8477589f, type: 3}
+  m_Color: {r: 0.654088, g: 0.654088, b: 0.654088, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -351,7 +345,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &8481641957082357718
+--- !u!58 &4167963597905294769
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -381,12 +375,12 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Radius: 0.105
 --- !u!1 &1518525608101436009
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,7 +391,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8374759972429239261}
   - component: {fileID: 5857246085744815386}
-  - component: {fileID: 1307909336656579070}
+  - component: {fileID: 4262593602340662223}
   m_Layer: 0
   m_Name: Circle (3)
   m_TagString: Trap
@@ -415,10 +409,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.86602545, w: 0.49999994}
   m_LocalPosition: {x: 2.5980759, y: -1.5000005, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 7, y: 7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1551322426973014862}
+  m_Father: {fileID: 6079654486164167610}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!212 &5857246085744815386
 SpriteRenderer:
@@ -466,9 +460,9 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0, g: 0, b: 0.9960785, a: 1}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 447856426745747066, guid: 97d2595203f45e840a3ad81e8477589f, type: 3}
+  m_Color: {r: 0.654088, g: 0.654088, b: 0.654088, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -478,7 +472,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &1307909336656579070
+--- !u!58 &4262593602340662223
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -508,12 +502,12 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Radius: 0.105
 --- !u!1 &3176522037293792378
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,6 +539,12 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1551322426973014862}
+  - {fileID: 2055246063020232886}
+  - {fileID: 1390262418338293893}
+  - {fileID: 3711024430158278663}
+  - {fileID: 8374759972429239261}
+  - {fileID: 5656415175281242452}
+  - {fileID: 3695474248374704312}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4690836303244722632
@@ -570,7 +570,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2055246063020232886}
   - component: {fileID: 4024495462191979107}
-  - component: {fileID: 2066005843460502875}
+  - component: {fileID: 1004001688679707535}
   m_Layer: 0
   m_Name: Circle (2)
   m_TagString: Trap
@@ -588,10 +588,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 7, y: 7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1551322426973014862}
+  m_Father: {fileID: 6079654486164167610}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!212 &4024495462191979107
 SpriteRenderer:
@@ -639,9 +639,9 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0, g: 0, b: 0.9960785, a: 1}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 447856426745747066, guid: 97d2595203f45e840a3ad81e8477589f, type: 3}
+  m_Color: {r: 0.654088, g: 0.654088, b: 0.654088, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -651,7 +651,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &2066005843460502875
+--- !u!58 &1004001688679707535
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -681,12 +681,12 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Radius: 0.105
 --- !u!1 &7615679931957144556
 GameObject:
   m_ObjectHideFlags: 0
@@ -697,7 +697,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1390262418338293893}
   - component: {fileID: 6799906062041948581}
-  - component: {fileID: 7875922985572688014}
+  - component: {fileID: 7084692560175253854}
   m_Layer: 0
   m_Name: Circle (3)
   m_TagString: Trap
@@ -715,10 +715,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 7, y: 7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1551322426973014862}
+  m_Father: {fileID: 6079654486164167610}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!212 &6799906062041948581
 SpriteRenderer:
@@ -766,9 +766,9 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0, g: 0, b: 0.9960785, a: 1}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 447856426745747066, guid: 97d2595203f45e840a3ad81e8477589f, type: 3}
+  m_Color: {r: 0.654088, g: 0.654088, b: 0.654088, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -778,7 +778,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &7875922985572688014
+--- !u!58 &7084692560175253854
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -808,12 +808,12 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Radius: 0.105
 --- !u!1 &8107476817914108565
 GameObject:
   m_ObjectHideFlags: 0
@@ -824,7 +824,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5656415175281242452}
   - component: {fileID: 7237998572536766451}
-  - component: {fileID: 6550098376271272733}
+  - component: {fileID: 8015783522587420321}
   m_Layer: 0
   m_Name: Circle (2)
   m_TagString: Trap
@@ -842,10 +842,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.86602545, w: 0.49999997}
   m_LocalPosition: {x: -1.2990379, y: -0.7500005, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 7, y: 7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1551322426973014862}
+  m_Father: {fileID: 6079654486164167610}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!212 &7237998572536766451
 SpriteRenderer:
@@ -893,9 +893,9 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0, g: 0, b: 0.9960785, a: 1}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 447856426745747066, guid: 97d2595203f45e840a3ad81e8477589f, type: 3}
+  m_Color: {r: 0.654088, g: 0.654088, b: 0.654088, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -905,7 +905,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &6550098376271272733
+--- !u!58 &8015783522587420321
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -935,9 +935,9 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Radius: 0.105
